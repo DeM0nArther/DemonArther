@@ -540,12 +540,12 @@ SelectedKillPlayer = ""
             Method = CFrame.new(0,40,0)
             else
             Methodnow = 1
-            Method = CFrame.new(0,0,0)
+            Method = CFrame.new(0,40,0)
            end
         end
     end)
 
-    slp:addToggle("Kill Player(lol)", nil, function(KillHim) 
+    slp:addToggle("Kill Player", nil, function(KillHim) 
     _G.KillHim = KillHim
 end)
 
