@@ -1,5 +1,5 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local venyx = library.new("DemonHub | No 1", 5013109572)
+ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+ local venyx = library.new("DemonHub | No 1", 5013109572)
  
  
 local page = venyx:addPage("Main (Test)", 5012544693)
