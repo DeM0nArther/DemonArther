@@ -538,9 +538,6 @@ SelectedKillPlayer = ""
            if Methodnow == 1 then
             Methodnow = 2
             Method = CFrame.new(0,40,0)
-            else
-            Methodnow = 1
-            Method = CFrame.new(0,0,0)
            end
         end
     end)
