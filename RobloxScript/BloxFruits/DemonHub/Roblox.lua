@@ -1,5 +1,5 @@
- local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
- local venyx = library.new("DemonHub | No 1", 5013109572)
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+local venyx = library.new("DemonHub | No 1", 5013109572)
  
  
 local page = venyx:addPage("Main (Test)", 5012544693)
@@ -540,19 +540,19 @@ SelectedKillPlayer = ""
             Method = CFrame.new(0,40,0)
             else
             Methodnow = 1
-            Method = CFrame.new(0,40,0)
+            Method = CFrame.new(0,0,0)
            end
         end
     end)
 
-    slp:addToggle("Kill Player", nil, function(KillHim) 
+    slp:addToggle("Kill Player(lol)", nil, function(KillHim) 
     _G.KillHim = KillHim
 end)
 
 spawn(function()
   game:GetService("RunService").RenderStepped:Connect(function()
          pcall(function()
-	if _G.KillHim then
+            if _G.KillHim then
                 local Char = game.Players.LocalPlayer.Character
                 local Char1 = game.Players:FindFirstChild(SelectedKillPlayer)
                 Char.HumanoidRootPart.CFrame = Char1.Character.HumanoidRootPart.CFrame * Method
