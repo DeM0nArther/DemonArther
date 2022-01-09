@@ -552,7 +552,8 @@ end)
 spawn(function()
   game:GetService("RunService").RenderStepped:Connect(function()
          pcall(function()
-            if _G.KillHim then
+         while wait(0.8) do
+	if _G.KillHim then
                 local Char = game.Players.LocalPlayer.Character
                 local Char1 = game.Players:FindFirstChild(SelectedKillPlayer)
                 Char.HumanoidRootPart.CFrame = Char1.Character.HumanoidRootPart.CFrame * Method
