@@ -552,7 +552,6 @@ end)
 spawn(function()
   game:GetService("RunService").RenderStepped:Connect(function()
          pcall(function()
-         while wait(0.8) do
 	if _G.KillHim then
                 local Char = game.Players.LocalPlayer.Character
                 local Char1 = game.Players:FindFirstChild(SelectedKillPlayer)
